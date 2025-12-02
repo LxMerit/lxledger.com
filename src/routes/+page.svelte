@@ -41,13 +41,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 2rem;
+    justify-content: flex-start;
+    padding: 15vh 2rem 2rem;
     line-height: 1.6;
   }
 
   .container {
-    max-width: 700px;
+    max-width: 800px;
     text-align: center;
     animation: fadeIn 1s ease-in;
   }
@@ -58,9 +58,9 @@
   }
 
   .logo {
-    width: 160px;
+    width: 200px;
     height: auto;
-    margin: 0 auto 2.5rem;
+    margin: 0 auto 2rem;
     filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
     transition: transform 0.3s ease;
   }
@@ -71,13 +71,14 @@
 
   h1 {
     font-family: 'Cinzel', serif;
-    font-size: clamp(2.5rem, 8vw, 4rem);
-    margin-bottom: 0.75rem;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    margin-bottom: 1rem;
     color: #b5c4c4;
     font-weight: 600;
     letter-spacing: 0.02em;
   }
 
+  /* Subscript x styling (like Rx for prescriptions) */
   .subscript-x {
     font-size: 0.65em;
     vertical-align: baseline;
@@ -86,95 +87,59 @@
     margin: 0 -0.05em;
   }
 
-  .hero-tagline {
+  .product-name {
     font-family: 'Cinzel', serif;
-    font-size: clamp(1.3rem, 3.5vw, 1.8rem);
-    margin-bottom: 2.5rem;
+    font-size: clamp(1.8rem, 4.5vw, 3rem);
+    margin-bottom: 0.5rem;
     color: #8fa8a8;
-    font-weight: 400;
-    letter-spacing: 0.02em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .product-subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin-bottom: 2rem;
+    color: #7a9292;
+    font-weight: 300;
     font-style: italic;
   }
 
-  .description {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
-    max-width: 580px;
-    margin: 0 auto 2rem;
+  .tagline {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    max-width: 600px;
+    margin: 0 auto 3rem;
     color: #c2d0d0;
     font-weight: 300;
-    line-height: 1.9;
+    line-height: 1.8;
   }
 
-  .manifesto {
-    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-    margin: 2rem 0;
-    color: #b5c4c4;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-  }
-
-  .chain-line {
-    font-size: clamp(1rem, 2.5vw, 1.15rem);
-    margin: 2.5rem 0;
+  .highlight {
     color: #8fa8a8;
-    font-weight: 300;
-    font-style: italic;
+    font-weight: 400;
+  }
+
+  .info {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-bottom: 1.5rem;
+    color: #89a0a0;
   }
 
   .divider {
     width: 60px;
     height: 2px;
     background: linear-gradient(90deg, transparent, #8fa8a8, transparent);
-    margin: 2.5rem auto;
-  }
-
-  .ecosystem {
-    margin: 2rem 0;
-    font-size: 1.1rem;
-    color: #7a9292;
-  }
-
-  .ecosystem a {
-    color: #b5c4c4;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .ecosystem a:hover {
-    color: #d4dada;
-  }
-
-  .launch {
-    font-size: 1rem;
-    color: #5f7676;
-    margin-top: 1rem;
+    margin: 3rem auto;
   }
 
   footer {
-    margin-top: 2rem;
+    margin-top: 4rem;
     font-size: 0.9rem;
     color: #5f7676;
     font-weight: 300;
-    line-height: 1.8;
-  }
-
-  footer .tagline {
-    font-size: 1rem;
-    color: #7a9292;
-    margin-bottom: 0.75rem;
-  }
-
-  footer .launch {
-    margin-bottom: 1.5rem;
-  }
-
-  footer .copyright {
-    font-size: 0.85rem;
-    color: #4a5e5e;
   }
 
   footer a {
-    color: #7a9292;
+    color: #8fa8a8;
     text-decoration: none;
     transition: color 0.2s ease;
   }
@@ -205,13 +170,11 @@
 
   @media (max-width: 640px) {
     .logo {
-      width: 130px;
+      width: 150px;
     }
 
-    .nav {
-      top: 1rem;
-      right: 1rem;
-      gap: 1.25rem;
+    .container {
+      padding: 1rem;
     }
   }
 </style>
@@ -220,32 +183,29 @@
   <nav class="nav">
     <a href="https://www.lxmerit.com">L<span class="subscript-x">x</span>Merit</a>
   </nav>
-
   <div class="container">
     <img src="/lxm-logo-grey-letters.jpg" alt="LxLedger Shield Logo" class="logo">
 
     <h1>L<span class="subscript-x">x</span>Ledger</h1>
-    <div class="hero-tagline">The immutable merit layer.</div>
 
-    <p class="description">
-      Every proof of mastery from the L(earn)² platform is instrumented, verified, and permanently etched here.
-    </p>
+    <div class="product-name">The Immutable Merit Layer</div>
+    <div class="product-subtitle">Your learning velocity, forever on-chain.</div>
 
-    <p class="manifesto">
+    <p class="tagline">
+      Every proof of mastery from the <span class="highlight">L(earn)² platform</span> is instrumented, verified, and permanently etched here.
       No custodians. No inflation. No reversal.
-    </p>
-
-    <p class="chain-line">
-      Your learning velocity, forever on-chain.
     </p>
 
     <div class="divider"></div>
 
+    <p class="info">L(earn)² = Merit | LxLedger.com</p>
+    <p class="info">Launching 2026</p>
+
     <footer>
-      <p class="tagline">L(earn)<sup>2</sup> = Merit | LxLedger.com</p>
-      <p class="launch">Launching 2026</p>
-      <p class="copyright">&copy; 2025 LxMerit &bull; Founded by Patrick Hardiman</p>
-      <p><a href="mailto:patrick@lxmerit.com">patrick@lxmerit.com</a></p>
+      <p>© 2025 LxMerit • Founded by Patrick Hardiman</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="mailto:patrick@lxmerit.com">patrick@lxmerit.com</a>
+      </p>
     </footer>
   </div>
 </div>
