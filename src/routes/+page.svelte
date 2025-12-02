@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -184,7 +185,7 @@
     <a href="https://www.lxmerit.com">L<span class="subscript-x">x</span>Merit</a>
   </nav>
   <div class="container">
-    <img src="/lxm-logo-grey-letters.jpg" alt="LxLedger Shield Logo" class="logo">
+    <img src={`${base}/lxm-logo-grey-letters.jpg`} alt="LxLedger Shield Logo" class="logo">
 
     <h1>L<span class="subscript-x">x</span>Ledger</h1>
 

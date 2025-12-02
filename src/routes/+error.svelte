@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
+  import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -191,7 +192,7 @@
   </nav>
 
   <div class="container">
-    <img src="/lxm-logo-grey-letters.jpg" alt="LxMerit Shield Logo" class="logo">
+    <img src={`${base}/lxm-logo-grey-letters.jpg`} alt="LxMerit Shield Logo" class="logo">
 
     <h1 class="brand">L<span class="subscript-x">x</span>Ledger</h1>
 
@@ -206,7 +207,7 @@
     <div class="divider"></div>
 
     <div class="links">
-      <a href="/" class="link">Return Home</a>
+      <a href={`${base}/`} class="link">Return Home</a>
       <a href="https://www.lxmerit.com" class="link secondary">L<span class="subscript-x">x</span>Merit</a>
     </div>
   </div>
