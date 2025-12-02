@@ -1,0 +1,8 @@
+# LxMerit - www.lxmerit.com
+# Allow all crawlers
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.lxmerit.com/sitemap.xml
