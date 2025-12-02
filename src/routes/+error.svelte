@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Page Not Found – LxMerit</title>
+  <title>Page Not Found – LxLedger</title>
   <meta name="description" content="The page you're looking for doesn't exist.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
@@ -187,14 +187,13 @@
 
 <div class="page">
   <nav class="nav">
-    <a href="/blog">Dev Diary</a>
-    <a href="/about">About</a>
+    <a href="https://www.lxmerit.com">L<span class="subscript-x">x</span>Merit</a>
   </nav>
 
   <div class="container">
     <img src="/lxm-logo-grey-letters.jpg" alt="LxMerit Shield Logo" class="logo">
 
-    <h1 class="brand">L<span class="subscript-x">x</span>Merit</h1>
+    <h1 class="brand">L<span class="subscript-x">x</span>Ledger</h1>
 
     <div class="error-code">{$page.status}</div>
 
@@ -208,7 +207,7 @@
 
     <div class="links">
       <a href="/" class="link">Return Home</a>
-      <a href="/blog" class="link secondary">Read Dev Diary</a>
+      <a href="https://www.lxmerit.com" class="link secondary">L<span class="subscript-x">x</span>Merit</a>
     </div>
   </div>
 </div>

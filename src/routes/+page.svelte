@@ -151,10 +151,36 @@
   }
 
   footer {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #5f7676;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+
+  footer .tagline {
+    font-size: 1rem;
+    color: #7a9292;
+    margin-bottom: 0.75rem;
+  }
+
+  footer .launch {
+    margin-bottom: 1.5rem;
+  }
+
+  footer .copyright {
     font-size: 0.85rem;
     color: #4a5e5e;
-    font-weight: 300;
+  }
+
+  footer a {
+    color: #7a9292;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  footer a:hover {
+    color: #b5c4c4;
   }
 
   .nav {
@@ -215,14 +241,11 @@
 
     <div class="divider"></div>
 
-    <p class="ecosystem">
-      <a href="https://www.lxmerit.com">L<span class="subscript-x">x</span>Merit</a> → L<span class="subscript-x">x</span>Ledger
-    </p>
-
-    <p class="launch">Launching 2026 with L(earn)²</p>
-
     <footer>
-      <p>L(earn)<sup>2</sup> = Merit</p>
+      <p class="tagline">L(earn)<sup>2</sup> = Merit | LxLedger.com</p>
+      <p class="launch">Launching 2026</p>
+      <p class="copyright">&copy; 2025 LxMerit &bull; Founded by Patrick Hardiman</p>
+      <p><a href="mailto:patrick@lxmerit.com">patrick@lxmerit.com</a></p>
     </footer>
   </div>
 </div>
