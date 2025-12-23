@@ -21,8 +21,7 @@ wrangler pages deploy .svelte-kit/cloudflare --project-name=lxledger --branch=ua
 
 echo ""
 echo "✅ UAT Deploy complete!"
-echo "   UAT: https://www-uat.lxledger.com"
-echo "   Alt: https://uat.lxledger.pages.dev"
+echo "   UAT: https://uat.lxledger.pages.dev"
 echo ""
 echo "⚠️  Test thoroughly before deploying to production!"
 echo "   Run ./deploy.sh to push to production after approval."
