@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SITE_URLS } from '$lib/config';
+	import { page } from '$app/stores';
 </script>
 
 <svelte:head>
@@ -66,7 +66,7 @@
 
 	<div class="my-8 p-6 rounded-lg" style="background: #f0f4f4; border: 1px solid #d4dada;">
 		<p class="text-slate-700 mb-3">
-			<strong class="text-slate-800"><a href={SITE_URLS.lxmerit} class="text-teal-700 hover:text-teal-800 no-underline hover:underline">L<span style="font-size: 0.65em; vertical-align: baseline; position: relative; top: 0.15em;">x</span>Merit.com</a></strong> — Where you learn
+			<strong class="text-slate-800"><a href={$page.data.siteUrls.lxmerit} class="text-teal-700 hover:text-teal-800 no-underline hover:underline">L<span style="font-size: 0.65em; vertical-align: baseline; position: relative; top: 0.15em;">x</span>Merit.com</a></strong> — Where you learn
 		</p>
 		<p class="text-slate-600 mb-3 ml-4">
 			Classical curriculum. AI tutors. Mastery-based progression.

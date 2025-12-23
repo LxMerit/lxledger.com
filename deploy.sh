@@ -17,7 +17,7 @@ cd "$SCRIPT_DIR"
 npm run build
 
 echo "🚀 Deploying to Cloudflare Pages..."
-wrangler pages deploy build --project-name=lxledger
+wrangler pages deploy .svelte-kit/cloudflare --project-name=lxledger --commit-dirty=true
 
 echo ""
 echo "✅ Production Deploy complete!"
