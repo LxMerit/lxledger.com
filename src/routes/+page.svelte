@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import { SITE_URLS } from '$lib/config';
 </script>
 
 <svelte:head>
@@ -182,7 +183,7 @@
 
 <div class="page">
   <nav class="nav">
-    <a href="https://www.lxmerit.com">L<span class="subscript-x">x</span>Merit</a>
+    <a href={SITE_URLS.lxmerit}>L<span class="subscript-x">x</span>Merit</a>
   </nav>
   <div class="container">
     <img src={`${base}/lxm-logo-grey-letters.jpg`} alt="LxLedger Shield Logo" class="logo">

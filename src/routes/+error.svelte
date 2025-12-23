@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { base } from '$app/paths';
+  import { SITE_URLS } from '$lib/config';
 </script>
 
 <svelte:head>
@@ -188,7 +189,7 @@
 
 <div class="page">
   <nav class="nav">
-    <a href="https://www.lxmerit.com">L<span class="subscript-x">x</span>Merit</a>
+    <a href={SITE_URLS.lxmerit}>L<span class="subscript-x">x</span>Merit</a>
   </nav>
 
   <div class="container">
@@ -208,7 +209,7 @@
 
     <div class="links">
       <a href={`${base}/`} class="link">Return Home</a>
-      <a href="https://www.lxmerit.com" class="link secondary">L<span class="subscript-x">x</span>Merit</a>
+      <a href={SITE_URLS.lxmerit} class="link secondary">L<span class="subscript-x">x</span>Merit</a>
     </div>
   </div>
 </div>
